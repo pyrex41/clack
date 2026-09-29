@@ -12,5 +12,6 @@
                "flexi-streams"
                "http-body")
   :components ((:file "src/test")
-               (:file "src/test/suite" :depends-on ("src/test")))
+               (:file "src/test/suite" :depends-on ("src/test"))
+               (:file "t/handler-stop" :depends-on ("src/test")))
   :description "Testing Clack Applications.")
